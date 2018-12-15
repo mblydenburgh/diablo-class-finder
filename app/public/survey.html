@@ -1,20 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Diablo Class Finder</title>
-    </head>
-    
-    <body>
-        <h3>Survey</h3>
 
-        <div class="form">
-            <form>
-                <label for="user-name">Name:</label>
-                <input type="text" name="user-name" id="name-input">
-            </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diablo Class Finder</title>
+
+
+</head>
+
+<body>
+    <h3>Survey</h3>
+
+    <form>
+        <div class="form-group">
+            <label for="user-name">Name:</label>
+            <input type="text" name="user-name" id="name-input">
         </div>
-    </body>
+
+        <div class="form-group">
+            <label for="q1">Question1</label>
+            <select class="form-control" id="q1">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="q2">Question2</label>
+            <select class="form-control" id="q2">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="q3">Question3</label>
+            <select class="form-control" id="q3">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="q4">Question4</label>
+            <select class="form-control" id="q4">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q5">Question5</label>
+            <select class="form-control" id="q5">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q6">Question6</label>
+            <select class="form-control" id="q6">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q7">Question7</label>
+            <select class="form-control" id="q7">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q8">Question8</label>
+            <select class="form-control" id="q8">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q9">Question9</label>
+            <select class="form-control" id="q9">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q10">Question10</label>
+            <select class="form-control" id="q10">
+                <option value="1">Strong Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strong Agree</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const submitButton = document.querySelector('button');
+
+        submitButton.addEventListener("click",(event)=>{
+            event.preventDefault();
+            console.log(`submited`);
+        })
+    </script>
+</body>
+
 </html>
