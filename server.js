@@ -8,4 +8,6 @@ const PORT = process.env.PORT;
 require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
 
+app.use(express.static(path.join(__dirname,'public')));
+
 app.listen(PORT,()=>console.log(`Now serving fools on port ${PORT}`));
