@@ -8,13 +8,15 @@
     <title>Diablo Class Finder</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
-        <div class="container">
+        <div class="container text-center">
             <h3>Survey</h3>
-
+            <h6>Please answer the following questions</h6>
             <form>
                 <div class="form-group">
                     <label for="user-name">Name:</label>
@@ -23,103 +25,104 @@
 
                 <div class="form-group">
                     <label for="q1">Question1</label>
+                    <p>You like to bash demons up close and personal:</p>
                     <select class="form-control" id="q1">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="q2">Question2</label>
+                    <label for="q2">You plow throw enemies with spells:</label>
                     <select class="form-control" id="q2">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="q3">Question3</label>
+                    <label for="q3">You believe in fighting with honor:</label>
                     <select class="form-control" id="q3">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="q4">Question4</label>
+                    <label for="q4">You prefer to fight with your fists:</label>
                     <select class="form-control" id="q4">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="q5">Question5</label>
+                    <label for="q5">You're into voodoo and other weird stuff:</label>
                     <select class="form-control" id="q5">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="q6">Question6</label>
+                    <label for="q6">You like raising the dead</label>
                     <select class="form-control" id="q6">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="q7">Question7</label>
+                    <label for="q7">You like to aid allies with support</label>
                     <select class="form-control" id="q7">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="q8">Question8</label>
+                    <label for="q8">You like being the center of attention</label>
                     <select class="form-control" id="q8">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="q9">Question9</label>
+                    <label for="q9">You prefer to be quick and light on your feet</label>
                     <select class="form-control" id="q9">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="q10">Question10</label>
+                    <label for="q10">You like to shoot things</label>
                     <select class="form-control" id="q10">
                         <option value="1">Strong Disagree</option>
                         <option value="2">Disagree</option>
-                        <option value="3">Neutral</option>
+                        <option value="3" selected>Neutral</option>
                         <option value="4">Agree</option>
                         <option value="5">Strong Agree</option>
                     </select>
@@ -132,11 +135,29 @@
     </form>
 
     <script>
-        const submitButton = document.querySelector('.btn');
+        const submitButton = $('.btn');
+        const form = $('form');
 
-        submitButton.addEventListener("click", (event) => {
+        form.on("submit",(event)=>{
             event.preventDefault();
-            console.log(`submited`);
+            // deconstruct event object's target as formData
+            const { target:formData } = event;
+            // formData returns array of each form element, use deconstruction to make variables for each form input
+            const [name,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10] = formData;
+            // formData variables are html element, collect values
+            const data = {"form":[name.value,q1.value,q2.value,q3.value,q4.value,q5.value,q6.value,q7.value,q8.value,q9.value,q10.value]};
+            console.log(`Sending ${data.form}`);
+            
+            // make POST request to api/classes
+            $.ajax({
+                method:'POST',
+                url:'/api/classes',
+                data:data
+            })
+            .then(response=>{
+                console.log(response);
+            })
+            .done(err=>{if(err) throw err});
         })
     </script>
 </body>
