@@ -3,37 +3,37 @@ const classes = {
         {
             name:'Witchdoctor',
             scores:[1,4,2,2,5,3,2,2,3,3],
-            img:'../data/images/witchdoctor.jpg'
+            img:'static/witchdoctor.jpg'
         },
         {
             name:'Barbarian',
             scores:[5,1,3,3,2,1,1,5,4,1],
-            img:'../data/images/barbarian.jpg'
+            img:'static/barbarian.jpg'
         },
         {
             name:'Wizard',
             scores:[1,5,3,1,3,2,3,3,3,4],
-            img:'../data/images/wizard.jpg'
+            img:'static/wizard.jpg'
         },
         {
             name:'Monk',
             scores:[4,2,4,5,2,3,5,3,4,1],
-            img:'../data/images/monk.jpg'
+            img:'static/monk.jpg'
         },
         {
             name:'Demon Hunter',
             scores:[2,2,1,2,3,3,1,1,5,5],
-            img:'../data/images/demonhunter'
+            img:'static/demonhunter'
         },
         {
             name:'Crusader',
             scores:[4,3,5,1,1,1,4,4,1,1],
-            img:'../data/images/crusader'
+            img:'static/crusader'
         },
         {
             name:'Necromancer',
             scores:[1,5,1,3,4,5,3,1,2,3],
-            img:'../data/images/necromancer'
+            img:'static/necromancer'
         }
     ]
 }

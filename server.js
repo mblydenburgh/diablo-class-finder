@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3001;
 //     app.use(express.bodyParser());
 // });
 app.use(express.static(path.join(__dirname,'public')));
+app.use('/static',express.static(path.join(__dirname,'app/data/images')));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
