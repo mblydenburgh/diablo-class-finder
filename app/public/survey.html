@@ -143,6 +143,7 @@
 
                 <button class="btn btn-danger mb-5" type="submit">Submit</button>
         </div>
+        <div id="match"></div>
     </main>
 
     </form>
@@ -175,7 +176,7 @@
             .done(err=>{if(err) throw err});
 
             function displayMatch(matchData){
-
+                $('#match').empty();
                 let newModal = $(`<div id="match-modal" class="modal" tabindex="-1" role="dialog">`);
                     newModal.html(`
                     <div class="modal-dialog" role="document">
@@ -197,7 +198,7 @@
                     </div>
             `)
 
-            $('.container').append(newModal);
+            $('#match').append(newModal);
             $('#match-modal').modal('show');
             }
         })
