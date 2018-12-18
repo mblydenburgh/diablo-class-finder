@@ -173,14 +173,6 @@
             .done(err=>{if(err) throw err});
 
             function displayMatch(matchData){
-                
-                // const matchDiv = $(`<div class="match">`);
-                //     matchDiv.html(`
-                //     <p>Match: ${matchData.name}</p>
-                //     <img src=${matchData.img} alt='${matchData.name}'>
-                //     `);
-
-                // $('.container').append(matchDiv);
 
                 let newModal = $(`<div id="match-modal" class="modal" tabindex="-1" role="dialog">`);
                     newModal.html(`
